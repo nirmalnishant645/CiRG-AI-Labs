@@ -484,6 +484,11 @@ h6 {
   padding: 60px 0;
 }
 
+#about .section-header h3{
+  padding-top: 50px;
+  color: #5C2C2C;
+}
+
 #about .about-container .background {
   margin: 20px 0;
 }
