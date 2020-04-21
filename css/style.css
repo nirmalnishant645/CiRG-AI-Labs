@@ -5,7 +5,7 @@
 body {
   background: #fff;
   color: #000;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 a {
@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -201,7 +201,7 @@ h6 {
 
 #intro .intro-info .btn-get-started,
 #intro .intro-info .btn-services {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -265,7 +265,7 @@ h6 {
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 500;
 }
 
@@ -702,7 +702,7 @@ h6 {
 }
 
 #why-us .counters span {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
   font-size: 48px;
   display: block;
@@ -712,7 +712,7 @@ h6 {
 #why-us .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   color: #F5BFBF;
 }
@@ -1072,7 +1072,7 @@ h6 {
   margin: 0 0 10px 0;
   padding: 0;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -1082,7 +1082,7 @@ h6 {
 #contact .contact-about p {
   font-size: 14px;
   line-height: 24px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #888;
 }
 
@@ -1208,7 +1208,7 @@ h6 {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #940202;
   font-weight: 400;
   letter-spacing: 3px;
@@ -1218,7 +1218,7 @@ h6 {
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: ##941080;
 }
 
@@ -1352,6 +1352,71 @@ h6 {
     margin: 0;
   }
 }
+
+.boxed-grey {
+	background: #f9f9f9;
+	padding: 20px;
+}
+
+.team h5 {
+	margin-bottom: 10px;
+}
+
+.team p.subtitle {
+	margin-bottom: 10px;
+}
+
+.avatar {
+	margin-bottom: 20px;
+}
+
+.team-social {
+	margin-left: 0;
+	padding-left: 0;
+
+}
+
+.team-social {
+	text-align: center;
+}
+
+.team-social li{
+    display: inline-block;
+	margin:0 !important;
+	padding:0;
+}
+
+
+.team-social a{
+	margin:0;
+	padding:0;
+    display: block;
+	width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #3bbec0;
+	color: #fff;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+.team-social a i{
+	text-align: center;
+	margin:0;
+	padding:0;
+}
+.team-social .social-facebook a{background: #3873ae;}
+.team-social .social-twitter a{background: #62c6f8;}
+.team-social .social-dribble a{background: #d74980;}
+.team-social .social-deviantart a{background: #8da356;}
+.team-social .social-google a{background: #000;}
+.team-social .social-vimeo a{background: #51a6d3;}
+.team-social .social-facebook a:hover{background: #4893ce;}
+.team-social .social-twitter a:hover{background: #82e6ff;}
+.team-social .social-dribble a:hover{background: #f769a0;}
+.team-social .social-deviantart a:hover{background: #adc376;}
+.team-social .social-google a:hover{background: #333;}
+.team-social .social-vimeo a:hover{background: #71c6f3;}
 
 @media (max-width: 768px) {
   .back-to-top {
