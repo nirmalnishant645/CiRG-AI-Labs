@@ -46,12 +46,12 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="#about">About</a></li>
-          <li><a href="particle/service/index.html">Consulting Services</a></li>
-          <li><a href="r&d.html">R&D</a></li>
-          <li><a href="insights.html">Featured Insights</a></li>
-          <li><a href="career.html">Career</a></li>
-          <li><a href="team.html">People</a></li>
-          <li><a href="contact.html">Connect</a></li>
+          <li><a href="particle/service/soon.html">R&D Technology</a></li>
+          <li><a href="particle/service/soon.html">Consulting</a></li>
+          <li><a href="particle/service/soon.html">Featured Insights</a></li>
+          <li><a href="particle/service/soon.html">Experts</a></li>
+          <li><a href="particle/service/soon.html">Career</a></li>
+          <li><a href="particle/service/soon.html">Connect</a></li>
         </ul>
       </nav><!-- .main-nav -->
 
@@ -62,7 +62,9 @@
     Intro Section
   ============================-->
   <section id="intro" class="clearfix">
-    <iframe width="100%" height="550px" frameborder="0" scrolling="no" src="https://momento360.com/e/u/149dd3fc06df43e3b4455d59891e6836?utm_campaign=embed&utm_source=other&utm_medium=other&heading=0&pitch=0&field-of-view=75" alt="" class="img-box"></iframe>
+    <!-- partial:index.partial.html -->
+<canvas id="nCanvasRender"></canvas>
+<!-- partial -->
     <div class="container">
       <div class="intro-info">
         <h2>Providing<br><span>solutions</span><br>for your business!</h2>
@@ -74,7 +76,7 @@
     </div>
   </section><!-- #intro -->
 
-  <section id="about">
+  <section style="background-color: #940202; color: white;" id="about">
       <div class="container">
         <div class="row about-container">
 
@@ -84,9 +86,12 @@
           </div>
 
           <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-            <p style = 'font-size: 20px; line-height: 1.5;' align = 'justify'><strong>We provide solutions to businesses in designing roadmaps for forecasting the future, anticipating disruption, spotting the gaps, re-crafting the future development strategy, solving complex risk problems and hand holding in Technology Adoption/Integration.</p>
-            <p style = 'font-size: 20px; line-height: 1.5;' align = 'justify'>
-             For this modelling our Experts use the latest techniques such as Artificial Intelligence, Machine Learning, Statistical Modelling, Data Mining, Robotics and other methodologies producing detailed understanding.
+            <p style = 'font-size: 22px; line-height: 1.5;' align = 'justify'><strong>
+              The competitiveness growing with the speed requires a fundamental shift in the products and R&D strategies. Today’s time requires product development and R&D to go hand in hand along with cutting edge technologies.</p>
+<p style = 'font-size: 22px; line-height: 1.5;' align = 'justify'>These requirements are called upon to navigate increasingly complex market dynamics and client expectations.</p>
+<p style = 'font-size: 22px; line-height: 1.5;' align = 'justify'>We at CiRG Labs are leveraging a unique combination of highly experienced Experts for problem understanding, specialized Researchers for analysis & qualified engineers for implementation practices altogether to coach businesses on driving innovation throughout the product life cycle.</p>
+<p style = 'font-size: 22px; line-height: 1.5;' align = 'justify'>This purpose is to inculcate Relevance, Authentication, Novelty, Boldness & Distinction in their product.</p>
+<p style = 'font-size: 22px; line-height: 1.5;' align = 'justify'>CIRG Labs focuses largely on SMEs, Startups, Public Organization.
            </strong></p>
           </div>
 
@@ -95,10 +100,21 @@
       </div>
     </section><!-- #about -->
 
+    <section id="about">
+        <div class="container">
+          <div class="row about-container">
+              <p style = 'font-size: 20px; line-height: 1.5;' align = 'justify'><strong>
+                If you have a need for a Consultant/ Scientist with a particular set of skills or experience, we offer a matching services to help place our Experts with companies where they can add most of the value, <a href = "connect.html">contact us</a>.
+              </strong></p>
+            </div>
+
+          </div>
+      </section><!-- #about -->
+
     <!--==========================
       Clients Section
     ============================-->
-    <section id="clients" class="section-bg">
+    <section style="height: 100vh;" id="clients" class="section-bg">
 
       <div class="container">
 
@@ -181,6 +197,8 @@
   <div id="preloader"></div>
 
   <!-- JavaScript Libraries -->
+  <script src='js/stats.js'></script>
+  <script  src="js/script.js"></script>
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
