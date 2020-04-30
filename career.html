@@ -46,11 +46,11 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li><a href="index.html">About</a></li>
-          <li><a href="particle/service/index.html">Consulting Services</a></li>
-          <li><a href="r&d.html">R&D</a></li>
+          <li><a href="particle/service/index.html">Consulting</a></li>
+          <li><a href="r&d.html">R&D Approaches</a></li>
           <li><a href="insights.html">Featured Insights</a></li>
+          <li><a href="team.html">Experts</a></li>
           <li class="active"><a href="career.html">Career</a></li>
-          <li><a href="team.html">People</a></li>
           <li><a href="contact.html">Connect</a></li>
         </ul>
       </nav><!-- .main-nav -->
@@ -61,16 +61,35 @@
   <!--==========================
   About Us Section
 ============================-->
-<section id="about">
+<section style="margin-top: 50px;" id="about">
   <div class="container">
 
-    <header class="section-header">
-      <h3>Careers</h3>
-    </header>
+    <form action="" name="submit-to-google-sheet">
 
-    <div class="row">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNrPxFWIdoj1M1PolrqISyPYrB4iDHuNad4OWSoqNpc91L6g/viewform?embedded=true" width="1280" height="1280" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div class="form-group">
+      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+      <div class="validation"></div>
     </div>
+    <div class="form-group">
+      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+      <div class="validation"></div>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="phone_number" id="phone_number" placeholder="Phone Number" data-rule="minlen:6" data-msg="Please enter a valid Phone Number" />
+      <div class="validation"></div>
+    </div>
+
+  <div class="form-group">
+    <input type="text" class="form-control" name="references" id="references" placeholder="References" data-rule="minlen:4" data-msg="Please enter your References" />
+    <div class="validation"></div>
+  </div>
+  <div class="form-group">
+    <textarea class="form-control" name="short_bio" rows="5" data-rule="required" data-msg="Please write something about yourself" placeholder="Short Bio"></textarea>
+    <div class="validation"></div>
+  </div>
+  <div class="text-center"><button type="submit" title="Submit">Submit</button></div>
+</form>
+
     </div>
 </section><!-- #about -->
 
@@ -98,6 +117,18 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
+
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzllBoDZjVRFW0uoVWtrBSRgWAFp1qiIGi5W0VNgzla5rNOGj8/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>

@@ -46,12 +46,12 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li><a href="index.html">About</a></li>
-          <li><a href="particle/service/index.html">Consulting Services</a></li>
-          <li><a href="r&d.html">R&D</a></li>
+          <li><a href="particle/service/index.html">Consulting</a></li>
+          <li><a href="r&d.html">R&D Approaches</a></li>
           <li><a href="insights.html">Featured Insights</a></li>
+          <li><a href="team.html">Experts</a></li>
           <li><a href="career.html">Career</a></li>
-          <li><a href="team.html">People</a></li>
-          <li class="active"><a href="connect.html">Connect</a></li>
+          <li class="active"><a href="contact.html">Connect</a></li>
         </ul>
       </nav><!-- .main-nav -->
 
@@ -61,17 +61,26 @@
   <!--==========================
   About Us Section
 ============================-->
-<section id="about">
+<section style="margin-top: 50px;" id="about">
   <div class="container">
 
-    <header class="section-header">
-      <h3>Contact Us</h3>
-    </header>
+    <form action="" name="submit-to-google-sheet">
 
-    <div class="row about-extra">
-      <h4>Questions or Comments?</h4>
+    <div class="form-group">
+      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+      <div class="validation"></div>
     </div>
-        <a style = "font-size: 36px;" href="https://wa.me/917838149874" class="whatsapp">Message us: <i class="fa fa-whatsapp"></i></a>
+  <div class="form-group">
+    <input type="text" class="form-control" name="company" id="company" placeholder="Company" data-rule="minlen:4" data-msg="Please enter your Company" />
+    <div class="validation"></div>
+  </div>
+  <div class="form-group">
+    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+    <div class="validation"></div>
+  </div>
+  <div class="text-center"><button type="submit" title="Submit">Submit</button></div>
+</form>
+
     </div>
 </section><!-- #about -->
 
@@ -99,6 +108,18 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
+
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyzF-HmWvCPuUuQ5mhptQL71HspwcDNpIhg57hZmEBWlkWyOQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
