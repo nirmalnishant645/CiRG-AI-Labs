@@ -46,9 +46,9 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="#about">About</a></li>
-          <li><a href="particle/service/index.html">Consulting</a></li>
-          <li><a href="particle/service/r&d.html">R&D Approaches</a></li>
-          <li><a href="insights.html">Featured Insights</a></li>
+          <li><a href="particle/service/consulting.html">Consulting</a></li>
+          <li><a href="particle/service/r&dapproaches.html">R&D Approaches</a></li>
+          <li><a href="featuredsciences.html">Featured Sciences</a></li>
           <li><a href="team.html">Experts</a></li>
           <li><a href="career.html">Career</a></li>
           <li><a href="contact.html">Connect</a></li>
@@ -67,7 +67,7 @@
 <!-- partial -->
     <div class="container">
       <div class="intro-info">
-        <h2><span>Integrating</span> Explorative Sciences<br>and Disruptive Technologies<br>in <span>Pursuit</span> of your<br>Business <span>Outgrowth.</span></h2>
+        <h2><span>Integrating</span> Explorative Sciences<br>& Disruptive Technologies<br>in <span>Pursuit</span> of your<br>Business <span>Prominence.</span></h2>
         <div>
           <a href="#about" class="btn-get-started scrollto">Get Started</a>
         </div>
@@ -81,8 +81,12 @@
         <div class="row about-container">
 
         <div class="row about-extra">
-          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-            <img src="img/" class="img-fluid" alt="">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2 vid">
+            <video autoplay controls muted>
+              <source src="img/cirg.mp4" type="video/mp4">
+              <source src="img/cirg.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
@@ -115,12 +119,27 @@
     <!--==========================
       Clients Section
     ============================-->
+
     <section style="height: 100vh;" id="clients" class="section-bg">
 
       <div class="container">
 
+        <div style="width: 100%;" class="wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+          <div class="box">
+            <img src="img/slide.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section style="height: 100vh; background-color: #FFFFFF;" id="clients" class="section-bg">
+
+      <div class="container">
+
         <div class="section-header">
-          <h3>Associated Partners</h3>
+          <h3 style="color: #000000;">Associated Partners</h3>
         </div>
 
         <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
@@ -176,7 +195,7 @@
   <!--==========================
     Footer
   ============================-->
-  <div id="particles-js">
+
   <footer id="footer">
     <div class="container">
       <div class="copyright">
@@ -194,10 +213,8 @@
       </div>
     </div>
   </footer><!-- #footer -->
-  </div>
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="preloader"></div>
 
   <script>
   var count_particles, stats, update;
